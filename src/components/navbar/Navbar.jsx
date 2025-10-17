@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/Logo.png";
 import vector from "../../assets/images/Vector.png";
+import { Search, ShoppingBasket,Heart } from "lucide-react";
+
 
 export default function Navbar({ onSearch }) {
   const [scrolled, setScrolled] = useState(false);
@@ -11,6 +13,8 @@ export default function Navbar({ onSearch }) {
   const [dropDown, setDropDown] = useState(false);
   const [user, setUser] = useState(null);
   const [query, setQuery] = useState(""); 
+  const [liked, setLiked] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -57,7 +61,7 @@ export default function Navbar({ onSearch }) {
               onChange={handleChange}
             />
             <button className="search-btn">
-              <img src={vector} alt="Search" />
+            <Search />
             </button>
           </div>
         </div>
@@ -65,7 +69,8 @@ export default function Navbar({ onSearch }) {
         <div className="navbar-right">
           {isLoggedIn ? (
             <>
-              <Link to="/cart" className="navbar-cart">🛒 Корзина</Link>
+              <Link to="/cart" className="navbar-cart"> <ShoppingBasket/> </Link>
+              <Link to="/heart" className="navbar-heart"> <Heart /> </Link>
 
               <div className="avatar-container" onClick={toggleDropDown}>
                 <div className="avatar">
@@ -77,7 +82,7 @@ export default function Navbar({ onSearch }) {
                 {dropDown && (
                   <div className="dropdown-menu">
                     <button onClick={handleLogout} className="dropdown-item">
-                      Выйти
+                     Log out
                     </button>
                   </div>
                 )}

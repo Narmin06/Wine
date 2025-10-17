@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import bottleImg from "../../assets/images/изображение для оффера (1).png";
 import bannerBg from "../../assets/images/баннер (5).png";
 import slide2 from "../../assets/images/image2.png";
-import arrowLeft from "../../assets/images/Arrow 1.png";
-import arrowRight from "../../assets/images/Arrow 2.png";
 import "./Slider.css";
+import { MoveRight, MoveLeft} from 'lucide-react';
 
 export default function Slider() {
   const slides = [
@@ -67,10 +66,10 @@ export default function Slider() {
       ))}
 
       <button className="arrow-btn left" onClick={prevSlide}>
-        <img src={arrowLeft} alt="Prev" />
+        <MoveLeft />
       </button>
       <button className="arrow-btn right" onClick={nextSlide}>
-        <img src={arrowRight} alt="Next" />
+        <MoveRight />
       </button>
     </div>
   );

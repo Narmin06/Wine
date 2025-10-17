@@ -12,7 +12,6 @@
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 1700px;
   margin: 0 auto;
   height: 400px;
 }
@@ -26,8 +25,6 @@
 .main-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
 .sommelier-overlay {

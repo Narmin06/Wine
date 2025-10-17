@@ -3,7 +3,7 @@
 
 .slider {
   position: relative;
-  width: 100%;
+
   height: 420px;
   background-color: rgb(39, 35, 35);
   overflow: hidden;
@@ -15,7 +15,7 @@
 }
 
 .slide {
- position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -29,78 +29,73 @@
 .combined-slide {
   display: flex;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 90%;
+  background-color: black;
 }
 
 .bottle-img {
-  width: 56%;
-  height: 96%;
-  object-fit: cover;
+  width: 60%;
+  height: 100%;
 }
 
 .banner-section {
-  width: 100%;
+  width: 700%;
   height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:-16px ;
-  margin-left: -90px; 
+  margin-top: -16px;
+  margin-left: -90px;
 }
 
 .banner-bg {
+  margin-right: -15px;
   width: 100%;
-  height: 107%;
+  height: 108.5%;
   object-fit: cover;
-  display: block;
-  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%); 
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .banner-text {
   position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
   text-align: center;
   max-width: 480px;
-  margin-right: 50px;
+  margin-right: -150px;
 }
 
 .banner-text h3 {
   font-family: "Alex Brush", cursive;
-font-weight: 400;
-font-size: 68px;
+  font-weight: 400;
+  font-size: 68px;
   margin-bottom: 20px;
   color: #fff;
   opacity: 0.7;
 }
 
 .banner-text h2 {
-   font-family: 'Inter', sans-serif;
-font-weight: 500;
-font-size: 38px;
-letter-spacing: 5%;
-     margin-bottom: 40px;  
-width: 110%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  letter-spacing: 5%;
+  margin-bottom: 40px;
+  width: 110%;
   line-height: 1.3;
   color: #fff;
 }
 
 .banner-text .bottom-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 15px;
-  letter-spacing: 0.35em; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.35em;
   color: #fff;
   opacity: 0.9;
 }
 
 .slide-bg {
   width: 100%;
-  height: 100%;
+  height: 95%;
   background-size: cover;
   background-position: center;
 }
@@ -108,38 +103,35 @@ width: 110%;
 .content-right {
   position: absolute;
   right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
+  top: 10%;
   text-align: center;
-  max-width: 480px;
+  max-width: 500px;
 }
 
 .content-right h3 {
   font-family: "Alex Brush", cursive;
-font-weight: 400;
-font-size: 68px;
+  font-weight: 400;
+  font-size: 68px;
   margin-bottom: 20px;
   color: #fff;
   opacity: 0.7;
 }
 
 .content-right h2 {
-   font-family: 'Inter', sans-serif;
-font-weight: 500;
-font-size: 40px;
-letter-spacing: 5%;
-     margin-bottom: 40px;  
-
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 5%;
+  margin-bottom: 40px;
   line-height: 1.3;
   color: #fff;
 }
 
 .bottom-text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 15px;
-  letter-spacing: 0.35em; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.35em;
   color: #fff;
   opacity: 0.9;
 }
@@ -160,11 +152,6 @@ letter-spacing: 5%;
   justify-content: center;
 }
 
-.arrow-btn img {
-  width: 14px;
-  height: 14px;
-}
-
 .left {
   left: 20px;
 }
@@ -173,15 +160,15 @@ letter-spacing: 5%;
   right: 20px;
 }
 
-
 @media (max-width: 900px) {
   .slider {
     height: 150px;
   }
 
-.slide:nth-child(2) {
-  height: 140px;
-}
+  .slide:nth-child(2) {
+    height: 140px;
+  }
+
   .bottle-img {
     width: 100%;
     height: 95%;
@@ -194,13 +181,13 @@ letter-spacing: 5%;
     margin-top: -16px;
   }
 
-.banner-bg {
-  width: 110%;
-  height: 107%;
-  object-fit: cover;
-  display: block;
-  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%); 
-}
+  .banner-bg {
+    width: 110%;
+    height: 107%;
+    object-fit: cover;
+    display: block;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+  }
 
   .banner-text {
     right: 5%;
@@ -227,32 +214,33 @@ letter-spacing: 5%;
   }
 
   .slide-bg {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
 
-.content-right {
+  .content-right {
     width: 45%;
     margin-right: -20px;
-}
+  }
 
-.content-right h3 {
- font-size: 30px;
+  .content-right h3 {
+    font-size: 30px;
     margin-bottom: 1px;
     margin-top: 10px;
-}
+  }
 
-.content-right h2 {
-   font-size: 15px;
+  .content-right h2 {
+    font-size: 15px;
     margin-bottom: 8px;
     width: 100%;
-}
+  }
 
-.bottom-text {
- font-size: 11px;
-}
+  .bottom-text {
+    font-size: 11px;
+  }
+
   .arrow-btn {
     width: 25px;
     height: 25px;
@@ -270,9 +258,10 @@ letter-spacing: 5%;
     height: 100px;
   }
 
-.slide:nth-child(2) {
-  height: 92px;
-}
+  .slide:nth-child(2) {
+    height: 92px;
+  }
+
   .bottle-img {
     width: 100%;
     height: 90%;
@@ -285,13 +274,13 @@ letter-spacing: 5%;
     margin-top: -16px;
   }
 
-.banner-bg {
-  width: 100%;
-  height: 108%;
-  object-fit: cover;
-  display: block;
-  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%); 
-}
+  .banner-bg {
+    width: 100%;
+    height: 108%;
+    object-fit: cover;
+    display: block;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+  }
 
   .banner-text {
     padding-left: 10px;
@@ -317,30 +306,31 @@ letter-spacing: 5%;
   }
 
   .slide-bg {
-  width: 100%;
-  height: 100%;
-}
+    width: 100%;
+    height: 100%;
+  }
 
-.content-right {
+  .content-right {
     width: 45%;
     margin-right: -20px;
-}
+  }
 
-.content-right h3 {
- font-size: 18px;
+  .content-right h3 {
+    font-size: 18px;
     margin-bottom: 1px;
     margin-top: 10px;
-}
+  }
 
-.content-right h2 {
-   font-size: 10px;
+  .content-right h2 {
+    font-size: 10px;
     margin-bottom: 8px;
     width: 100%;
-}
+  }
 
-.bottom-text {
- font-size: 8px;
-}
+  .bottom-text {
+    font-size: 8px;
+  }
+
   .arrow-btn {
     width: 25px;
     height: 25px;

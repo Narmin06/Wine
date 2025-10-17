@@ -14,7 +14,6 @@
   gap: 7px;
   width: 100%;
   height: 150px;
-  max-width: 1600px;
   margin-bottom: 10px;
 }
 
@@ -54,7 +53,7 @@
   margin-bottom: 8px;
   font-family: "Inter", sans-serif;
 font-weight: 450;
-font-size: 15px;
+font-size: 17px;
 line-height: 100%;
 letter-spacing: 15%;
 text-align: center;

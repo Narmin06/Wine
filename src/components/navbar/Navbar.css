@@ -23,7 +23,6 @@
   box-sizing: border-box;
 }
 
-
 .logo-link {
   display: flex;
   align-items: center;
@@ -76,9 +75,8 @@
   cursor: pointer;
 }
 
-.search-btn img {
-  width: 14px;
-  height: 14px;
+.search-btn {
+  color: #FFFFFF;
 }
 
 .navbar-right {
@@ -104,12 +102,23 @@
   font-weight: 600;
 }
 
+
+
 .navbar-cart:hover {
   color: #7A0000;
 }
 
+.navbar-heart {
+ 
+
+}
+.navbar-heart:hover {
+  fill: #ffffff !important;
+  stroke: #7A0000 !important;
+  color: #7A0000 !important;
+}
+
 .avatar-container {
-  position: relative;
   cursor: pointer;
 }
 
@@ -136,22 +145,20 @@
 
 .dropdown-menu {
   position: absolute;
-  right: 0;
-  background: #ffffff;
-  border-radius: 6px;
-  margin-top: 5px;
-  width: 100px;
+  margin-top: 6px;
+  margin-left: 10px;
+  background: none;
 }
 
 .dropdown-item {
-  background: none;
+  text-align: center;
+  position: relative;;
   border: none;
-  color: rgb(0, 0, 0);
-  padding: 8px 22px;
-  width: 100%;
+  padding: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
+  border-radius:0 20% 20%;
 }
 
 .dropdown-item:hover {
