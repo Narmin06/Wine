@@ -5,10 +5,11 @@
   font-family: FuturaDemiComp;
   position: sticky;
   top: 0;
+  transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-  background-color: #111;
+  background-color: #ccc !important; 
 }
 
 .navbar-container {
@@ -47,6 +48,7 @@
   display: flex;
   justify-content: center;
 }
+
 .mobile-search {
   display: none;
 }
@@ -91,31 +93,26 @@
   font-size: 16px;
 }
 
-.navbar-link:hover {
-  color: #b30000;
-}
-
-.navbar-cart {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.navbar-cart,
+.navbar-heart {
+  display: flex;
+  align-items: center; 
+  font-size: 18px;
   font-weight: 600;
+  gap: 5px;
 }
 
-
-
-.navbar-cart:hover {
+.navbar-cart:hover{
   color: #7A0000;
 }
 
-.navbar-heart {
- 
-
+.navbar-heart:hover{
+  color: #7A0000;
 }
-.navbar-heart:hover {
-  fill: #ffffff !important;
-  stroke: #7A0000 !important;
-  color: #7A0000 !important;
+
+.navbar-heart:hover .heart-icon {
+  fill: #7A0000;
+  stroke: #7A0000;
 }
 
 .avatar-container {
@@ -242,9 +239,10 @@
     gap: 18px;
   }
 
-  .navbar-cart {
-    font-size: 14px;
-  }
+  .navbar-cart,
+  .navbar-heart {
+  font-size: 18px;
+ }
 
   .avatar {
     width: 30px;
@@ -296,6 +294,7 @@
   .navbar-center {
     display: none;
   }
+
   .mobile-search {
     display: flex;
     width: 100%;
@@ -306,14 +305,25 @@
     background-color: #7A0000;
     cursor: pointer;
   }
+  .logo-img {
+    margin-left: -12px;
+  }
+  
   .logo-text {
     font-size: 10px;
+    font-weight: bold;
+    margin-left: 0;
   }
+  .navbar-cart,
+  .navbar-heart {
+    gap: 4px;
+  font-size: 10px;
+ }
 
-  .navbar-cart {
-    font-size: 12px;
-  }
-
+ .cart-icon,
+ .heart-icon {
+  width: 20px;
+}
   .avatar {
     width: 26px;
     height: 26px;

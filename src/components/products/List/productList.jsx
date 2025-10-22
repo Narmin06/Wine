@@ -63,7 +63,7 @@ const filteredProducts = useMemo(() => {
   return (
     <div className="products-section">
       <div className="filters-wrapper">
-        <ProductFilters  onFilterChange={setFilters} />
+        <ProductFilters onFilterChange={setFilters} />
       </div>
 
       <div className="products-content">

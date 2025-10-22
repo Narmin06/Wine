@@ -160,6 +160,106 @@
   right: 20px;
 }
 
+@media (max-width: 1400px) {
+  .slider {
+    height: 200px;
+  }
+
+  .slide:nth-child(2) {
+    height: 190px;
+  }
+
+  .bottle-img {
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+  }
+
+  .banner-section {
+    width: 70%;
+    margin-top: -16px;
+  }
+
+  .banner-bg {
+    width: 110%;
+    height: 137%;
+    display: block;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .banner-text {
+    right: 0%;
+    top: 55%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    max-width: 90%;
+  }
+
+  .banner-text h3 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+  }
+
+  .banner-text h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .banner-text .bottom-text {
+    font-size: 11px;
+  }
+
+  .slide-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-right {
+    width: 45%;
+    margin-right: -40px;
+    margin-top: 0;
+  }
+
+  .content-right h3 {
+    font-size: 35px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+  }
+
+  .content-right h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .bottom-text {
+    font-size: 13px;
+  }
+
+  .arrow-btn {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+  } 
+
+  .left {
+    left: 5px;
+  }
+  
+  .right {
+    right: 5px;
+  }
+  
+}
+
+
+
+
+
 @media (max-width: 900px) {
   .slider {
     height: 150px;
@@ -171,26 +271,24 @@
 
   .bottle-img {
     width: 100%;
-    height: 95%;
+    height: 100%;
     object-fit: cover;
   }
 
   .banner-section {
     width: 70%;
-    height: 106%;
     margin-top: -16px;
   }
 
   .banner-bg {
     width: 110%;
-    height: 107%;
-    object-fit: cover;
+    height: 132%;
     display: block;
     clip-path: polygon(13% 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   .banner-text {
-    right: 5%;
+    right: 0%;
     top: 55%;
     transform: translateY(-50%);
     margin-right: 10px;
@@ -241,17 +339,20 @@
     font-size: 11px;
   }
 
-  .arrow-btn {
-    width: 25px;
-    height: 25px;
-  }
+  /* .arrow-btn {
+    width: 70px;
+    height: 70px;
+  } */
 
-  .arrow-btn img {
-    width: 10px;
-    height: 10px;
+  .left {
+    left: 5px;
   }
+  
+  .right {
+    right: 5px;
+  }
+  
 }
-
 
 @media (max-width: 500px) {
   .slider {
@@ -264,13 +365,12 @@
 
   .bottle-img {
     width: 100%;
-    height: 90%;
-    object-fit: cover;
+    height: 100%;
   }
 
   .banner-section {
     width: 70%;
-    height: 106%;
+    height: 117%;
     margin-top: -16px;
   }
 

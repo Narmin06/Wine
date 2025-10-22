@@ -5,7 +5,6 @@ import logo from "../../assets/images/Logo.png";
 import vector from "../../assets/images/Vector.png";
 import { Search, ShoppingBasket,Heart } from "lucide-react";
 
-
 export default function Navbar({ onSearch }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,8 +12,6 @@ export default function Navbar({ onSearch }) {
   const [dropDown, setDropDown] = useState(false);
   const [user, setUser] = useState(null);
   const [query, setQuery] = useState(""); 
-  const [liked, setLiked] = useState(false);
-
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -69,9 +66,8 @@ export default function Navbar({ onSearch }) {
         <div className="navbar-right">
           {isLoggedIn ? (
             <>
-              <Link to="/cart" className="navbar-cart"> <ShoppingBasket/> </Link>
-              <Link to="/heart" className="navbar-heart"> <Heart /> </Link>
-
+              <Link to="/cart" className="navbar-cart"> <ShoppingBasket className="cart-icon"/> Cart</Link>
+              <Link to="/heart" className="navbar-heart"> <Heart className="heart-icon"/>Favourite</Link>
               <div className="avatar-container" onClick={toggleDropDown}>
                 <div className="avatar">
                   <span className="avatar-letter">

@@ -60,8 +60,6 @@
   background-color: #c00;
 }
 
-
-
 @media (max-width: 1024px) {
   .product-card {
   width: 270px;

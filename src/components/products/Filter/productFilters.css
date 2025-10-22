@@ -1,14 +1,18 @@
 .filters {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 25px;
+  width: 250px;
   background-color: rgb(39, 35, 35);
 }
 
-.filter-block {
+.filter-group {
   border-bottom: 1px solid #555;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .filter-block h3 {
@@ -70,81 +74,46 @@
   background-color: #c00;
 }
 
-@media (max-width: 1024px) {
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  width: 100%;
-  gap: 140px;
-}
-.filter-block {
-  padding-bottom: 7px;
-}
 
-.filter-block h3 {
-  font-size: 24px;
-}
-.filter-block label {
-  font-size: 22px;
-}
+@media (max-width: 1400px) {
+  .filters {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+  }
+  
+  .filter-block  {
+    min-width: 160px;
+    padding-bottom: 7px;
+  }
+  .filter-block h3 {
+    font-size: 18px;
+  }
+  .filter-block label {
+    font-size: 14px;
+  }
+  
+  .filter-block input[type="radio"] {
+    transform: scale(1.4);
+  }
+  .price-filter {
+    gap: 5px;
+  }
+  
+  .price-filter input {
+    width: 50px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .price-ok {
+    padding: 4px 9px;
+    font-size: 9px;
+  }
+  }
 
-.price-filter {
-  gap: 10px;
-}
-
-.price-filter input {
-  width: 60px;
-  padding: 10px;
-  font-size: 17px;
-}
-.price-ok {
-  padding: 6px 11px;
-  font-size: 16px;
-}
-}
-
-
-@media (max-width: 900px) {
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items:center;
-  justify-content: center;
-  width: 100%;
-  gap: 140px;
-}
-.filter-block {
-  padding-bottom: 7px;
-}
-
-.filter-block h3 {
-  font-size: 14px;
-}
-.filter-block label {
-  font-size: 12px;
-}
-
-.filter-block input[type="radio"] {
-  transform: scale(1);
-}
-.price-filter {
-  gap: 5px;
-}
-
-.price-filter input {
-  width: 50px;
-  padding: 5px;
-  font-size: 13px;
-}
-.price-ok {
-  padding: 4px 9px;
-  font-size: 9px;
-}
-}
 
 @media (max-width: 600px) {
 .filters {
@@ -184,7 +153,6 @@
 }
 
 @media (max-width: 500px) {
-
   .filters {
     display: flex;
   flex-direction: column;
