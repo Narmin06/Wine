@@ -101,6 +101,48 @@
 }
 
 
+@media (max-width: 900px) {
+  .product-card {
+  width: 330px;
+  padding: 18px;
+}
+
+.product-card .img {
+  padding-bottom: 20px;
+  height: 300px;
+}
+
+.product-card .title {
+  margin: 28px 0 11px;
+  font-size: 10px;
+}
+
+.product-card .meta {
+  font-size: 10px;
+}
+
+.product-card .price-row {
+  gap: 12px;
+  font-size: 10px;
+}
+
+.product-card .price {
+  font-size: 15px;
+}
+
+.to-cart {
+  margin-left: 60px;
+  padding: 8px 14px;
+  font-size: 10px;
+}
+
+.price {
+  font-weight: 700;
+}
+}
+
+
+
 @media (max-width: 600px) {
   .product-card {
   width: 280px;

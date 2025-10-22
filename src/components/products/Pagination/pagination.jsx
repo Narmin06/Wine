@@ -1,8 +1,15 @@
+import React, { useEffect } from "react";
 import "./pagination.css";
 
-export default function Pagination({ totalPages, currentPage, onPageChange }) {
+export default function Pagination({
+  totalPages,
+  currentPage,
+  onPageChange,
+  onPageSizeChange,
+}) {
   if (!totalPages || totalPages <= 1) return null;
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
 
   return (
     <div className="pagination">

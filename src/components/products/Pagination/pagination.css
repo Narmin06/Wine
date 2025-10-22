@@ -25,5 +25,4 @@
 }
 .page-btn:disabled {
   opacity: .3; 
-  cursor: not-allowed;
 }

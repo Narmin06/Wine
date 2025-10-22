@@ -1,7 +1,7 @@
 .products-section {
   width: 100%;
   display: flex;
-  flex-direction: row; /* 1400px-dən yuxarıda yan panel */
+  flex-direction: row; 
   align-items: flex-start;
   background-color: rgb(39, 35, 35);
   color: white;
@@ -9,7 +9,6 @@
   gap: 40px;
 }
 
-/* Sol panel filter */
 .filters-wrapper {
   width: 250px;
   flex-shrink: 0;
@@ -58,7 +57,6 @@
   background: #333;
 }
 
-/* ✅ 1024–1400 aralığı: filterlər yuxarıda yan-yana */
 @media (max-width: 1400px) and (min-width: 1024px) {
   .products-section {
     flex-direction: column !important;
@@ -90,15 +88,13 @@
   }
 }
 
-/* 💻 900px və aşağı: 2 sütun grid */
 @media (max-width: 900px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 40px !important;
   }
 }
 
-/* 📱 Mobil (600px və aşağı): filterlər alt-alta */
 @media (max-width: 600px) {
   .filters-wrapper {
     flex-direction: column !important;

@@ -80,6 +80,7 @@ export default function ProductFilters({ onFilterChange }) {
             placeholder="min"
             value={filters.minPrice}
             onChange={handlePriceChange}
+            min ="0"
           />
           <input
             type="number"
@@ -87,6 +88,7 @@ export default function ProductFilters({ onFilterChange }) {
             placeholder="max"
             value={filters.maxPrice}
             onChange={handlePriceChange}
+            min = "0"
           />
           <button className="price-ok" onClick={applyPriceFilter}>
             OK
