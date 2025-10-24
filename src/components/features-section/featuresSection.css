@@ -69,7 +69,26 @@ letter-spacing: 5%;
 text-align: center;
 }
 
-@media (max-width: 1400px) and (min-width: 1024px)  {
+@media (max-width: 1400px){
+  .features-container {
+    height: 120px;
+    max-width: 1500px;
+  }
+  
+  .feature-item img {
+    height: 140px;
+  }
+  
+  .feature-title {
+  font-size: 12px;
+  }
+  
+  .feature-subtitle {
+  font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
   .features-container {
     height: 120px;
     max-width: 1500px;
@@ -87,7 +106,8 @@ text-align: center;
   font-size: 17px;
   }
   }
-  
+
+
 @media (max-width: 900px) {
 .features-container {
   height: 112px;

@@ -8,11 +8,11 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-subscribe">
-          <h3>ПОДПИСАТЬСЯ НА EMAIL РАССЫЛКУ</h3>
+          <h3>SUBSCRIBE TO OUR EMAIL NEWSLETTER</h3>
           <div className="subscribe-form">
             <label htmlFor="email">EMAIL</label>
             <input type="email" />
-            <button>ОТПРАВИТЬ</button>
+            <button>SEND</button>
           </div>
 
           <div className="socials">

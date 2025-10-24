@@ -8,20 +8,20 @@ export default function FeaturesSection() {
     {
       id: 1,
       image: img1,
-      title: "НА ТЕРРИТОРИИ БОРДО",
-      subtitle: "БРЕНДИРОВАНИЕ ВИН",
+      title: "IN THE TERRITORY OF BORDEAUX",
+      subtitle: "WINE BRANDING",
     },
     {
       id: 2,
       image: img2,
-      title: "ЧТО ДЕЛАЕТ НАС ОСОБЕННЫМИ?",
-      subtitle: "БЕСЕДА С СОМЕЛЬЕ",
+      title: "WHAT MAKES US SPECIAL?",
+      subtitle: "CONVERSATION WITH A SOMMELIER",
     },
     {
       id: 3,
       image: img3,
-      title: "С ИНТЕРЕСНЫМИ ИНГРЕДИЕНТАМИ",
-      subtitle: "ФИРМЕННЫЕ КОКТЕЙЛИ",
+      title: "WITH INTERESTING INGREDIENTS",
+      subtitle: "SIGNATURE COCKTAILS",
     },
   ];
 

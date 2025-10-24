@@ -6,17 +6,13 @@ export default function AboutSommelier() {
       <div className="about-container">
         <div className="about-left">
           <p>
-            Благодаря рекомендациям наших опытных кавистов, вы сможете не только приобрести ту самую бутылку вина, 
-            но и узнать много нового о сочетаниях, подборе гастрономической пары, необходимости декантации, 
-            хранения и сервировки.
+          With the advice of our experienced cavists, you can not only find that perfect bottle of wine, but also learn a lot about pairings, choosing food pairings, the need for decanting, storage, and serving.
           </p>
         </div>
 
         <div className="about-right">
           <p>
-            Мы с удовольствием поделимся с вами самыми главными винными секретами, 
-            а также поможем подобрать идеальный букет и вкус, соответствующие поводу, 
-            вашим предпочтениям и статусу.
+          We'll be happy to share our most important wine secrets with you, and help you choose the perfect bouquet and flavor to suit the occasion, your preferences, and your status.
           </p>
         </div>
       </div>

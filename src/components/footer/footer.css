@@ -124,9 +124,7 @@
   line-height: 60px;
 }
 
-
 @media (max-width: 1024px) {
-
 .footer-subscribe {
   flex: 1;
   padding-top: 35px;
@@ -152,7 +150,7 @@
 
 .subscribe-form input {
   padding: 5px;
-  width: 40%;
+  width: 35%;
 }
 
 .subscribe-form button {
@@ -216,34 +214,33 @@
 }
 }
 
-
 @media (max-width: 600px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 
-.footer-subscribe {
-  padding-top: 25px;
-  padding-left: 15px;
-  background-color: #0A0A0A;
-  z-index: 1;
-}
-
+  .footer-subscribe {
+    padding-left: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
 .footer-subscribe h3 {
-  font-size: 9px;
-  margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .subscribe-form {
-  gap: 12px;
-  margin-bottom: 35px;
+  gap: 13px;
 }
 
 .subscribe-form label {
-  font-size: 10px;
+  font-size: 12px;
   opacity: 50%;
 }
 
 .subscribe-form input {
   padding: 3px;
-  width: 70%;
+  width: 40%;
 }
 
 .subscribe-form button {
@@ -257,17 +254,13 @@
 }
 
 .socials a img {
-  width: 14px;
+  width: 15px;
   height: 14px;
-}
-
-.footer-image {
-  width: 0%;
 }
 
 .footer-image img {
   width: 0%;
-  height: 220px;
+  height: 0%;
 }
 
 .footer-bottom {

@@ -15,8 +15,8 @@ export default function SommelierSection() {
           <img src={overlayShape} alt="overlay" className="overlay-img" />
           <div className="sommelier-text">
             <h4>Sommelier Choice</h4>
-            <h2>НЕ УВЕРЕНЫ В ВЫБОРЕ?<br />МЫ ГОТОВЫ ПОМОЧЬ!</h2>
-            <p>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</p>
+            <h2>Not sure what to choose? WE'RE READY TO HELP!</h2>
+            <p>ORDER A CONSULTATION</p>
           </div>
         </div>
       </div>
